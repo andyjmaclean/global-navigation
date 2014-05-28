@@ -1,0 +1,211 @@
+body, html{
+  margin:   0;
+  padding:  0;
+}
+
+/* pulldown (right) */
+
+.pull-down{
+	background-color:   #a2a2a2;
+	overflow:           hidden;
+	z-index:            0;
+					
+	-webkit-transition: max-height 0.7s ease-in-out;
+    -moz-transition:    max-height 0.7s ease-in-out;
+    -o-transition:      max-height 0.7s ease-in-out;
+    -ms-transition:     max-height 0.7s ease-in-out;
+    transition:         max-height 0.7s ease-in-out;
+	
+}
+
+.pull-down.closed{
+	max-height:         0;
+}
+
+.pull-down.opened{
+	height:             auto;
+	max-height:         12em;
+}
+
+.pull-down ul,
+.pull-down li{
+	list-style:         none;
+}
+
+.opener-wrapper{
+	XXXposition:         fixed;
+	position:         absolute;
+	margin:           auto;
+	width:            100%;
+}
+
+.opener{
+	background-color: #a2a2a2;
+	border-radius:    0 0 1.15em 1.15em;
+	
+	float:            right;
+	font-family:      europeana;
+	
+	margin-right:     2em;
+	border:           2px solid #919191;
+	border-top-style: none;
+	padding:          0.25em 1em 0.5em 1em;
+
+	position:         relative;
+	z-index:          2;
+}
+
+
+/* home (left) */
+
+.eu-global-nav #global-home{
+
+	background-color:    #fff;
+	
+	XXXborder-style:        solid;
+	XXXborder-width:        3px;
+	
+	border:                 3px solid #AD310B;
+	
+	color:            #AD310B;
+	display:          none;
+	
+	font-family: europeana;	
+	font-size:4em;
+	
+	margin:0;
+	padding:0;
+	
+	position:relative;
+	
+	text-align:center;
+	
+	vertical-align: middle;
+	
+	width:     1.2em;
+	max-width: 1.2em;
+	min-width: 1.2em;
+	
+	z-index:   2;
+}
+
+
+.eu-global-nav .global-search{
+	width:     22em;
+	max-width: 22em;
+	min-width: 22em;
+}
+
+
+.eu-global-nav #global-home.active,
+.eu-global-nav #global-home:hover{
+	text-decoration:     none;
+    background-color:    #AD310B;
+    color:               #fff;
+    
+   	border-color:        #fff;
+   	
+   	
+    XXXborder-color-left:   #fff;    
+    XXXborder-color-right:  #fff;
+    XXXborder-color-top:    #fff;
+    XXXborder-color-bottom: #fff;
+    
+    
+}
+
+.eu-global-nav #global-home,
+.eu-global-nav #global-home.active,
+.eu-global-nav #global-home:hover{
+     -webkit-transition: color 1000ms linear;
+     -moz-transition:    color 1000ms linear;
+     -o-transition:      color 1000ms linear;
+     -ms-transition:     color 1000ms linear;
+     transition:         color 1000ms linear;
+
+     -webkit-transition: background-color 1000ms linear;
+     -moz-transition:    background-color 1000ms linear;
+     -o-transition:      background-color 1000ms linear;
+     -ms-transition:     background-color 1000ms linear;
+     transition:         background-color 1000ms linear;
+     
+     
+     
+     /*
+	-webkit-transition:  border-color-left 250ms linear;
+     -moz-transition:    border-color-left 250ms linear;
+     -o-transition:      border-color-left 250ms linear;
+     -ms-transition:     border-color-left 250ms linear;
+     transition:         border-color-left 250ms linear;
+
+	-webkit-transition:  border-color-top 500ms linear;
+     -moz-transition:    border-color-top 500ms linear;
+     -o-transition:      border-color-top 500ms linear;
+     -ms-transition:     border-color-top 500ms linear;
+     transition:         border-color-top 500ms linear;
+
+	-webkit-transition:  border-color-right 750ms linear;
+     -moz-transition:    border-color-right 750ms linear;
+     -o-transition:      border-color-right 750ms linear;
+     -ms-transition:     border-color-right 750ms linear;
+     transition:         border-color-right 750ms linear;
+
+	-webkit-transition:  border-color-bottom 1000ms linear;
+     -moz-transition:    border-color-bottom 1000ms linear;
+     -o-transition:      border-color-bottom 1000ms linear;
+     -ms-transition:     border-color-bottom 1000ms linear;
+     transition:         border-color-bottom 1000ms linear;
+
+*/
+
+     
+}
+
+
+
+
+/* main */
+
+/* search */
+
+.eu-global-nav .main,
+.eu-global-nav .global-search{
+	display: block;
+}
+
+
+.global-search{
+	text-align: center;
+}
+
+
+.global-search input{
+	outline:   none;	
+	width:     100%;
+}
+
+
+@media only screen and ( min-width:28em ){
+
+
+	.global-search div{
+		padding:     1em;
+		box-sizing:			border-box;
+		-moz-box-sizing:	border-box;
+		-webkit-box-sizing:	border-box;		
+	}
+	
+	.global-search input{
+		margin-top:  2.12em;
+	}
+
+	
+	.eu-global-nav .main,
+	.eu-global-nav .global-search,
+	.eu-global-nav #global-home{
+		display: table-cell;
+		vertical-align: top;
+	}
+
+}
+

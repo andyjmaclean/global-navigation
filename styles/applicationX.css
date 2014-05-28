@@ -1,0 +1,178 @@
+html { width: 100%; height: 100% }
+body { width: 100%; height: 100%; margin: 0; padding: 0; }
+
+.eu-global-nav h4{
+	-webkit-margin-before: 0;
+	-webkit-margin-after:  0;
+	-webkit-margin-start:  0;
+	-webkit-margin-end:    0;
+}
+
+@font-face {
+  font-family: 'europeana';
+  src: url("../fonts/europeana.eot?#") format("eot"), url("../fonts/europeana.svg#europeana") format("svg"), url("../fonts/europeana.woff") format("woff"), url("../fonts/europeana.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.eu-global-nav{
+	font-family:	"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+	font-weight:	bold;
+	font-size:		0.8em;
+	
+	/*
+	overflow:		visible;
+	float:			left;
+	*/
+	display:        table;
+	table-layout:   fixed;
+
+	width:			100%;
+	XXXclear:			left;
+}
+
+	
+.eu-global-nav,
+.eu-global-nav ul,
+.eu-global-nav ul li{
+	background-color:	#fff;
+}
+
+.eu-global-nav a{
+	color:				#fff;
+	padding:			0 1em;
+	text-decoration:	none;
+}
+
+.eu-global-nav ul{
+	list-style:	none;
+}
+
+
+.eu-global-nav li.divider,
+.eu-global-nav .left>li,
+.eu-global-nav .right>li{
+	line-height:	2.2em;
+}
+
+
+
+	
+.eu-global-nav ul li{
+	float:				left;
+}
+
+
+.eu-global-nav ul,
+.eu-global-nav ul>li{
+	 -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*
+.eu-global-nav .icon-arrow-3:before
+*/
+.eu-global-nav .arrow{
+	margin-left: 1em;
+}
+
+.eu-global-nav .arrow:after{
+  	font-family: europeana;
+	content: "e";
+}
+
+.eu-global-nav .menu-item .arrow:after{
+	position: absolute;
+	right: 0.2em;
+	bottom:0.1em;
+}
+
+
+.eu-global-nav a.active>.arrow:after{
+	content: "f";
+}
+/*
+.eu-global-nav .global-nav-menu-bar.measure-mode .arrow{
+	height:111px;
+	max-height:111px;
+	overflow:hidden;
+}
+
+.eu-global-nav .global-nav-menu-bar.measure-mode .arrow:after{
+	height:111px;
+	max-height:111px;
+	overflow:hidden;
+}
+*/
+
+/*
+.eu-global-nav .icon-logo:before{
+  	font-family: europeana;
+	content: "a";
+}
+
+.eu-global-nav .icon-logo{
+	background-color:	#00584C;
+	font-size:			2em;
+	font-weight:		normal;
+	padding:			0.3em 0.4em 0 0.4em;
+	padding:			0.7em 0.4em 0.11em;
+	top:				-0.15em;
+	position:			relative;
+}
+*/
+
+.eu-global-nav .title-area,
+.eu-global-nav ul,
+.eu-global-nav ul li{
+	margin:				0;
+	padding:			0;
+}
+
+.eu-global-nav ul li{
+	padding:	0.5em;
+}
+
+.eu-global-nav ul li.divider{
+	border-left:		1px solid #2b2b2b;
+}
+
+.eu-global-nav .hide-on-phones{
+	display:none  !important;
+}
+
+.eu-global-nav .show-on-phones{
+	display:block !important;
+}
+
+
+@media only screen and ( min-width:	28em ){
+
+
+	/*
+	body.desktop
+	*/
+	.eu-global-nav	.show-on-phones{
+		display:none !important;
+	}
+	
+	/*
+	body.desktop
+	*/
+	.eu-global-nav	.hide-on-phones{
+		display:block	!important;
+	}
+	
+	/*
+	body.desktop
+	*/
+	.eu-global-nav	.menu-label,
+	.eu-global-nav	.open-menu{
+		display: table-cell !important;
+	}
+	
+
+}
+
+

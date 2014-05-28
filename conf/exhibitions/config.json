@@ -1,0 +1,327 @@
+globalNav.init(
+{
+	"html" : {
+		"row1"   : {
+				
+			"left"  : [
+				
+								
+				{
+					"type" : "hMenu",
+					"items" : [
+					
+					
+						{
+							"type" : "globalmenu",
+							
+							"title": {
+								"en" : "",
+								"it" : "E"
+							},
+							
+							
+							"items" : [
+						        {
+						            "type": "item",
+						            "label": {
+						                "en": "Exhibitions",
+						                "it": "Mostri"
+						            },
+						            "value": "exhibitions",
+						            "url": "test-global-nav-exhibitions.html"
+						        },
+						        {
+						            "type": "item",
+						            "label": {
+						                "en": "Portal",
+						                "it": "Portale"
+						            },
+						            "value": "portal",
+						            "url": "test-global-nav-portal.html"
+						        },
+						        {
+						            "type": "item",
+						            "label": {
+						                "en": "1914-1918",
+						                "it": "1914-1918"
+						            },
+						            "value": "1418",
+						            "url": "test-global-nav-1418.html"
+						        },
+						        {
+						            "type": "item",
+						            "label": {
+						                "en": "Remix",
+						                "it": "Remix"
+						            },
+						            "value": "remix",
+						            "url": "test-global-nav-remix.html"
+						        },
+						        {
+						            "type": "hMenu",
+						            "title": {
+						                "en": "API",
+						                "it": "API"
+						            },
+						            "items": [
+						                {
+						                    "type": "item",
+						                    "label": {
+						                        "en": "Get an API Key",
+						                        "it": "Ottiene una chiave"
+						                    },
+						                    "value": "api-key",
+						                    "url": "test-global-nav-api-key.html"
+						                },
+						                {
+						                    "type": "item",
+						                    "label": {
+						                        "en": "Find out more",
+						                        "it": "Leggi"
+						                    },
+						                    "value": "api-docs",
+						                    "url": "test-global-nav-api-docs.html"
+						                }
+						            ]
+						        }
+							]
+						},
+					
+					
+					
+						{
+							"type" : "item",
+							"label" : {
+								"en" : "Home",
+								"it" : "Casa"
+							},
+							"url" : "test-global-nav.html"		
+						},
+						
+						
+						
+						{
+							"type" : "hMenu",
+							"title" : {
+								"en" : "Europeana",
+								"it" : "Europeana"
+							},
+							"items" : [
+								{
+									"type" : "item",
+									"label" : {
+										"en" : "Wiki Loves Glam",
+										"it" : "Wiki Ama Glam"
+									},
+									"value" : "wlg"
+								},
+								{
+									"type" : "item",
+									"label" : {
+										"en" : "Wiki Loves Art Nouveau",
+										"it" : "Wiki Ama Art Nouveau"
+									},
+									"value" : "wlan"
+								}
+							]
+						},
+						
+						{
+							"type" : "hMenu",
+							"title" : {
+								"en" : "TEL",
+								"it" : "TEL"
+							},
+							"items" : [
+								{
+									"type" : "item",
+									"label" : {
+										"en" : "Reading Europe",
+										"it" : "Leggendo Europe"
+									},
+									"value" : "re"
+								},
+								{
+									"type" : "item",
+									"label" : {
+										"en" : "A Roma Journey",
+										"it" : "Una Gita dei Roma"
+									},
+									"value" : "arj"
+								}
+							]
+							
+							
+						}
+					]
+				}
+				
+			],
+			
+			
+			
+			"right" : ["Register / Login",
+				{
+					"title": {
+						"en" : "Choose a language",
+						"it" : "Sceglie una lingua"
+					},
+					"items":[
+						{
+							"type" : "item",
+							"label" : {
+								"en" : "English",
+								"it" : "Inglese"
+							},
+							"value" : "en",
+							"url"   : "?locale=en"
+						},
+						{
+							"type" : "item",
+							"label" : {
+								"en" : "Danish",
+								"it" : "Danese"
+							},
+							"value" : "dk"		
+						},
+						{
+							"type" : "item",
+							"label" : {
+								"en" : "Dutch",
+								"it" : "Olandese"
+							},
+							"value" : "nl"		
+						},
+						
+						
+						
+						{
+							"type" : "submenu",
+							
+							"title": {
+								"en" : "Choose a dialect",
+								"it" : "Sceglie un dialetto"
+							},
+							
+							"items":[
+								{
+									"type" : "item",
+									"label" : {
+										"en" : "Correct",
+										"it" : "Corretto"
+									},
+									"value" : "cr"
+								},
+								{
+									"type" : "item",
+									"label" : {
+										"en" : "American",
+										"it" : "Americano"
+									},
+									"value" : "us"
+								},
+								
+								{
+									"type" : "submenu",
+									
+									"title": {
+										"en" : "Choose a state dialect",
+										"it" : "Sceglie un dialetto statale"
+									},
+									
+									"items":[
+										{
+											"type" : "item",
+											"label" : {
+												"en" : "Texan",
+												"it" : "Texano"
+											},
+											"value" : "tx"
+										},
+										{
+											"type" : "item",
+											"label" : {
+												"en" : "New Jersey",
+												"it" : "Nuovo Jersey"
+											},
+											"value" : "nj"
+										}		
+									]
+								}
+									
+							]
+						},
+
+
+						
+						
+						{
+							"type" : "item",
+							"label" : {
+								"en" : "French",
+								"it" : "Francese"
+							},
+							"value" : "fr"		
+						},
+						{
+							"type" : "item",
+							"label" : {
+								"en" : "German",
+								"it" : "Tedesco"
+							},
+							"value" : "de"		
+						},
+						{
+							"type" : "item",
+							"label" : {
+								"en" : "Greek",
+								"it" : "Greco"
+							},
+							"value" : "gr"		
+						},
+						{
+							"type" : "item",
+							"label" : {
+								"en" : "Italian",
+								"it" : "Italiano"
+								
+							},
+							"value" : "it",		
+							"url"   : "?locale=it"
+						},
+						{
+							"type" : "item",
+							"label" : {
+								"en" : "Slovakian",
+								"it" : "Slovaca"
+							},
+							"value" : "sl"		
+						}
+
+					]
+				}
+			]
+		}
+	},
+	
+	"js" : {
+		"scripts" : [		
+		   "scripts/EuAccessibility.js",
+		   "scripts/EuGlobalMenu.js"
+		]
+	},
+	
+	"css" : {
+		
+		"stylesheets" : [
+			"styles/application.css",
+			"styles/EuGlobalMenu.css"
+		]
+		
+	},
+	
+
+	
+	
+}
+);

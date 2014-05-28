@@ -1,0 +1,249 @@
+
+globalNav.init(
+{
+	"pulldownConf" : "/conf/global.json",
+		
+	"html" : {
+		
+		"home" : "/apps/portal/index.html",
+		
+		"left"  : [
+			
+							
+			{
+				"menu" :true,
+				"items" : [
+				
+					{
+						"label" : {
+							"zen" : "Make a quick and effortless Search in our amazing and well-stocked data archive",
+							"zzen" : "Make a quick Search",
+							"en" : "Search",
+							"it" : "Cerca"
+						},
+						"url"     : "/apps/portal/search.html?conf=portal/alternative-config.json",
+						"dataUrl" : "/apps/portal/items/"
+					},
+					{
+						"menu" : true,
+						"label" : {
+							"enz" : "Most Popular Searches",
+							"en" : "Popular",
+							"it" : "Cerchi Populari"
+						},
+						"items" : [
+							{
+								"label" : {
+									"en" : "Cordoba Cathedral in Spain",
+									"it" : "Il Duomo do Cordoba"
+								}
+							},
+							{
+								"menu" : true,
+								"label" : {
+									"en" : "World War II",
+									"it" : "La Seconda Guerra Mondiale"
+								},
+								"items" : [
+									{
+										"label" : {
+											"en" : "FIRST",
+											"it" : "PRIMO"
+										}									
+									},
+									{
+										"label" : {
+											"en" : "SECOND",
+											"it" : "SECONDO"
+										}									
+									}
+								]
+							},
+							{
+								"label" : {
+									"en" : "Leonardo da Vinci",
+									"it" : "Leonardo da Vinci"
+								}
+							},
+							{
+								"label" : {
+									"en" : "Michaelangelo"
+								}
+							}
+						]
+					},
+					{
+						"label" : {
+							"en" : "Press Centre",
+							"it" : "Centro di Stampa"
+						}
+					}
+				]
+			}
+		],
+		
+		
+		"right" : ["Register / Login",
+			{
+				"title": {
+					"en" : "Choose a language",
+					"it" : "Sceglie una lingua"
+				},
+				"items":[
+					{
+						"type" : "item",
+						"label" : {
+							"en" : "English",
+							"it" : "Inglese"
+						},
+						"value" : "en",
+						"url"   : "?locale=en"
+					},
+					{
+						"type" : "item",
+						"label" : {
+							"en" : "Danish",
+							"it" : "Danese"
+						},
+						"value" : "dk"		
+					},
+					{
+						"type" : "item",
+						"label" : {
+							"en" : "Dutch",
+							"it" : "Olandese"
+						},
+						"value" : "nl"		
+					},
+					
+					
+					
+					{
+						"type" : "submenu",
+						
+						"title": {
+							"en" : "Choose a dialect",
+							"it" : "Sceglie un dialetto"
+						},
+						
+						"items":[
+							{
+								"type" : "item",
+								"label" : {
+									"en" : "Correct",
+									"it" : "Corretto"
+								},
+								"value" : "cr"
+							},
+							{
+								"type" : "item",
+								"label" : {
+									"en" : "American",
+									"it" : "Americano"
+								},
+								"value" : "us"
+							},
+							
+							{
+								"type" : "submenu",
+								
+								"title": {
+									"en" : "Choose a state dialect",
+									"it" : "Sceglie un dialetto statale"
+								},
+								
+								"items":[
+									{
+										"type" : "item",
+										"label" : {
+											"en" : "Texan",
+											"it" : "Texano"
+										},
+										"value" : "tx"
+									},
+									{
+										"type" : "item",
+										"label" : {
+											"en" : "New Jersey",
+											"it" : "Nuovo Jersey"
+										},
+										"value" : "nj"
+									}		
+								]
+							}
+								
+						]
+					},
+
+
+					
+					
+					{
+						"type" : "item",
+						"label" : {
+							"en" : "French",
+							"it" : "Francese"
+						},
+						"value" : "fr"		
+					},
+					{
+						"type" : "item",
+						"label" : {
+							"en" : "German",
+							"it" : "Tedesco"
+						},
+						"value" : "de"		
+					},
+					{
+						"type" : "item",
+						"label" : {
+							"en" : "Greek",
+							"it" : "Greco"
+						},
+						"value" : "gr"		
+					},
+					{
+						"type" : "item",
+						"label" : {
+							"en" : "Italian",
+							"it" : "Italiano"
+							
+						},
+						"value" : "it",		
+						"url"   : "?locale=it"
+					},
+					{
+						"type" : "item",
+						"label" : {
+							"en" : "Slovakian",
+							"it" : "Slovaca"
+						},
+						"value" : "sl"		
+					}
+
+				]
+			}
+		]
+		
+	},
+	
+	"js" : {
+		"scripts" : [
+		   "/scripts/EuAccessibility.js",
+		   "/scripts/EuGlobalMenu.js",
+		   "/scripts/EuMenuBar.js"
+		]
+	},
+	
+	"css" : {
+		
+		"stylesheets" : [
+			"/styles/applicationX.css",
+			"/styles/EuGlobalMenuX.css",
+			"/styles/GlobalNavMenuBarX.css"
+		]
+		
+	}
+	
+});
+

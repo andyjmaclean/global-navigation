@@ -1,0 +1,345 @@
+
+globalNav.init(
+{
+	"pulldownConf" : "/conf/global.json",
+		
+	"html" : {
+		
+		"home" : "/apps/portal/index.html",
+		
+		"breadcrumbs" : [
+
+			{
+				"page"   : "apps/portal/rights/index.html",
+				"crumbs" : [
+
+					{
+						"label" : {
+							"en" : "Crumb 1",
+							"it" : "Bricciola 1"
+						},
+						"url" : "http://www.google.co.uk"
+					},
+					{
+						"label" : {
+							"en" : "Crumb 2",
+							"it" : "Bricciola 2"
+						},
+						"url" : "http://www.google.co.uk"
+					},
+					{
+						"label" : {
+							"en" : "Crumb 3",
+							"it" : "Bricciola 3"
+						},
+						"url" : "http://www.google.co.uk"
+					}		
+				
+				]
+			}
+			
+		],
+		
+		"left"  : [
+			
+							
+			{
+				"menu" :true,
+				"items" : [
+				
+					{
+						"label" : {
+							"en" : "Portal Home",
+							"it" : "Portale - Home"
+						},
+						"url" : "/apps/portal/index.html"
+					},
+					{
+						"label" : {
+							"en" : "Search",
+							"it" : "Cerca"
+						},
+						"url"     : "/apps/portal/search.html?conf=portal/alternative-config.json",
+						"dataUrl" : "/apps/portal/items/"
+					},
+					{
+						"menu" : true,
+						"label" : {
+							"en" : "Popular Searches",
+							"it" : "Cerchi Populari"
+						},
+						"items" : [
+							{
+								"label" : {
+									"en" : "Cordoba Cathedral",
+									"it" : "Il Duomo do Cordoba"
+								}
+							},
+							{
+								"label" : {
+									"en" : "World War II",
+									"it" : "La Seconda Guerra Mondiale"
+								}
+							},
+							{
+								"label" : {
+									"en" : "Leonardo da Vinci",
+									"it" : "Leonardo da Vinci"
+								}
+							}
+						]
+					},
+					{
+						"menu" : true,
+						"label" : {
+							"en" : "About Portal",
+							"it" : "Informazioni sul Portale"
+						},
+						"backUrl" : "/apps/portal/index.html",
+						"items" : [
+							{
+								"label" : {
+									"en" : "Terms of Use",
+									"it" : "Termini del Uso"
+								}
+							},
+							{
+								"menu" : true,
+								"label" : {
+									"en" : "Rights",
+									"it" : "Diritti"
+								},
+								"url"     : "/apps/portal/rights/index.html",
+								"dataUrl" : "/apps/portal/rights/index.html",
+								"items" : [
+									{
+										"label" : {
+											"en" : "Rights 1",
+											"it" : "Diritti 1"
+										},
+										"url" : "/apps/portal/rights/rights1.html",
+									},
+									{
+										"label" : {
+											"en" : "Rights 2",
+											"it" : "Diritti 2"
+										},
+										"url" : "/apps/portal/rights/rights2.html",
+									},
+									{
+										"label" : {
+											"en" : "Rights 3",
+											"it" : "Diritti 3"
+										},
+										"url" : "/apps/portal/rights/rights3.html",
+									},
+									{
+										"menu" : true,
+										"label" : {
+											"en" : "Rights 4",
+											"it" : "Diritti 4"
+										},
+										
+										"url" : "/apps/portal/rights/rights4.html",
+										"backUrl" : "/apps/portal/rights/index.html",
+										"items" : [
+										{
+											"label" : {
+												"en" : "Rights 4.1",
+												"it" : "Diritti 4.2"
+											}										},
+										{
+											"label" : {
+												"en" : "Rights 4.2",
+												"it" : "Diritti 4.2"
+											}		
+										}]							
+										
+									}
+								]								
+								
+							},
+							{
+								"label" : {
+									"en" : "Jobs",
+									"it" : "Opportunita' di Lavoro"
+								},
+								"value" : ""		
+							}
+						]
+					},
+					{
+						"label" : {
+							"en" : "Press Centre",
+							"it" : "Centro di Stampa"
+						}
+					}
+				]
+			}
+		],
+		
+		
+		"right" : ["Register / Login",
+			{
+				"title": {
+					"en" : "Choose a language",
+					"it" : "Sceglie una lingua"
+				},
+				"items":[
+					{
+						"type" : "item",
+						"label" : {
+							"en" : "English",
+							"it" : "Inglese"
+						},
+						"value" : "en",
+						"url"   : "?locale=en"
+					},
+					{
+						"type" : "item",
+						"label" : {
+							"en" : "Danish",
+							"it" : "Danese"
+						},
+						"value" : "dk"		
+					},
+					{
+						"type" : "item",
+						"label" : {
+							"en" : "Dutch",
+							"it" : "Olandese"
+						},
+						"value" : "nl"		
+					},
+					
+					
+					
+					{
+						"type" : "submenu",
+						
+						"title": {
+							"en" : "Choose a dialect",
+							"it" : "Sceglie un dialetto"
+						},
+						
+						"items":[
+							{
+								"type" : "item",
+								"label" : {
+									"en" : "Correct",
+									"it" : "Corretto"
+								},
+								"value" : "cr"
+							},
+							{
+								"type" : "item",
+								"label" : {
+									"en" : "American",
+									"it" : "Americano"
+								},
+								"value" : "us"
+							},
+							
+							{
+								"type" : "submenu",
+								
+								"title": {
+									"en" : "Choose a state dialect",
+									"it" : "Sceglie un dialetto statale"
+								},
+								
+								"items":[
+									{
+										"type" : "item",
+										"label" : {
+											"en" : "Texan",
+											"it" : "Texano"
+										},
+										"value" : "tx"
+									},
+									{
+										"type" : "item",
+										"label" : {
+											"en" : "New Jersey",
+											"it" : "Nuovo Jersey"
+										},
+										"value" : "nj"
+									}		
+								]
+							}
+								
+						]
+					},
+
+
+					
+					
+					{
+						"type" : "item",
+						"label" : {
+							"en" : "French",
+							"it" : "Francese"
+						},
+						"value" : "fr"		
+					},
+					{
+						"type" : "item",
+						"label" : {
+							"en" : "German",
+							"it" : "Tedesco"
+						},
+						"value" : "de"		
+					},
+					{
+						"type" : "item",
+						"label" : {
+							"en" : "Greek",
+							"it" : "Greco"
+						},
+						"value" : "gr"		
+					},
+					{
+						"type" : "item",
+						"label" : {
+							"en" : "Italian",
+							"it" : "Italiano"
+							
+						},
+						"value" : "it",		
+						"url"   : "?locale=it"
+					},
+					{
+						"type" : "item",
+						"label" : {
+							"en" : "Slovakian",
+							"it" : "Slovaca"
+						},
+						"value" : "sl"		
+					}
+
+				]
+			}
+		]
+		
+	},
+	
+	"js" : {
+		"scripts" : [
+		   "/scripts/EuAccessibility.js",
+		   "/scripts/EuGlobalMenu.js",
+		   "/scripts/EuMenuBar.js"
+		]
+	},
+	
+	"css" : {
+		
+		"stylesheets" : [
+			"/styles/application2.css",
+			"/styles/EuGlobalMenu2.css",
+			"/styles/GlobalNavMenuBar.css"
+		]
+		
+	}
+	
+});
+

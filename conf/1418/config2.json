@@ -1,0 +1,317 @@
+globalNav.init(
+{
+	"pulldownConf" : "/conf/global.json",
+		
+	"html" : {
+
+		"home" : "/apps/1418/index.html",
+		
+		"left"  : [
+			
+							
+			{
+				"menu" :true,
+				"items" : [
+				
+					{
+						"label" : {
+							"en" : "Explore",
+							"it" : "Esplora"
+						},
+						"value" : "explore"		
+					},
+					{
+						"label" : {
+							"en" : "Make a Donation",
+							"it" : "Contributi"
+						},
+						"value" : "contribute"		
+					},
+					{
+						"menu" : true,
+						"label" : {
+							"en" : "Upcoming Events",
+							"it" : "Prossimi Eventi"
+						},
+						"XXXXXvalue" : "events",
+						"items" : [
+							{
+								"label" : {
+									"en" : "Roadshow 1",
+									"it" : "Evento 1"
+								},
+								"url" : ""		
+							},
+							{
+								"label" : {
+									"en" : "Roadshow 2",
+									"it" : "Evento 2"
+								},
+								"value" : ""		
+							},
+							{
+								"label" : {
+									"en" : "Roadshow 3",
+									"it" : "Evento 3"
+								},
+								"url" : ""		
+							},
+							{
+								"menu" : true,
+								"label" : {
+									"en" : "Roadshow 4",
+									"it" : "Evento 4"
+								},
+								"items" : [
+									{
+										"label" : {
+											"en" : "Roadshow 4.1",
+											"it" : "Evento 4.1"
+										},
+										"url" : "roadshow-4.1.html"		
+									},
+									{
+										"label" : {
+											"en" : "Roadshow 4.2",
+											"it" : "Evento 4.2"
+										},
+										"value" : ""		
+									},
+									{
+										"label" : {
+											"en" : "Roadshow 4.3",
+											"it" : "Evento 4.3"
+										},
+										"value" : ""		
+									},
+									{
+										"label" : {
+											"en" : "Roadshow 4.4",
+											"it" : "Evento 4.4"
+										},
+										"value" : ""		
+									},
+									{
+										"label" : {
+											"en" : "Roadshow 4.5",
+											"it" : "Evento 4.5"
+										},
+										"value" : ""		
+									},
+									{
+										"label" : {
+											"en" : "Roadshow 4.6",
+											"it" : "Evento 4.6"
+										},
+										"value" : ""		
+									}
+								]								
+								
+							},
+							{
+								"label" : {
+									"en" : "Roadshow 5",
+									"it" : "Evento 5"
+								},
+								"value" : ""		
+							},
+							{
+								"label" : {
+									"en" : "Roadshow 6",
+									"it" : "Evento 6"
+								},
+								"value" : ""		
+							},
+							{
+								"label" : {
+									"en" : "Roadshow 7",
+									"it" : "Evento 7"
+								},
+								"value" : ""		
+							}
+						]
+					},
+					{
+						"label" : {
+							"en" : "Tell us your own Story",
+							"it" : "Racconta la tua Storia"
+						},
+						"value" : "tell-your-story"
+					}
+					/*
+					,
+					{
+						"label" : {
+							"en" : "Go on, make a Donation!",
+							"it" : "Contributi"
+						},
+						"value" : "contribute-2"
+					}
+					*/
+				]
+			}
+		],
+		
+		
+		"right" : ["Register / Login",
+			{
+				"title": {
+					"en" : "Choose a language",
+					"it" : "Sceglie una lingua"
+				},
+				"items":[
+					{
+						"type" : "item",
+						"label" : {
+							"en" : "English",
+							"it" : "Inglese"
+						},
+						"value" : "en",
+						"url"   : "?locale=en"
+					},
+					{
+						"type" : "item",
+						"label" : {
+							"en" : "Danish",
+							"it" : "Danese"
+						},
+						"value" : "dk"		
+					},
+					{
+						"type" : "item",
+						"label" : {
+							"en" : "Dutch",
+							"it" : "Olandese"
+						},
+						"value" : "nl"		
+					},
+					
+					
+					
+					{
+						"type" : "submenu",
+						
+						"title": {
+							"en" : "Choose a dialect",
+							"it" : "Sceglie un dialetto"
+						},
+						
+						"items":[
+							{
+								"type" : "item",
+								"label" : {
+									"en" : "Correct",
+									"it" : "Corretto"
+								},
+								"value" : "cr"
+							},
+							{
+								"type" : "item",
+								"label" : {
+									"en" : "American",
+									"it" : "Americano"
+								},
+								"value" : "us"
+							},
+							
+							{
+								"type" : "submenu",
+								
+								"title": {
+									"en" : "Choose a state dialect",
+									"it" : "Sceglie un dialetto statale"
+								},
+								
+								"items":[
+									{
+										"type" : "item",
+										"label" : {
+											"en" : "Texan",
+											"it" : "Texano"
+										},
+										"value" : "tx"
+									},
+									{
+										"type" : "item",
+										"label" : {
+											"en" : "New Jersey",
+											"it" : "Nuovo Jersey"
+										},
+										"value" : "nj"
+									}		
+								]
+							}
+								
+						]
+					},
+
+
+					
+					
+					{
+						"type" : "item",
+						"label" : {
+							"en" : "French",
+							"it" : "Francese"
+						},
+						"value" : "fr"		
+					},
+					{
+						"type" : "item",
+						"label" : {
+							"en" : "German",
+							"it" : "Tedesco"
+						},
+						"value" : "de"		
+					},
+					{
+						"type" : "item",
+						"label" : {
+							"en" : "Greek",
+							"it" : "Greco"
+						},
+						"value" : "gr"		
+					},
+					{
+						"type" : "item",
+						"label" : {
+							"en" : "Italian",
+							"it" : "Italiano"
+							
+						},
+						"value" : "it",		
+						"url"   : "?locale=it"
+					},
+					{
+						"type" : "item",
+						"label" : {
+							"en" : "Slovakian",
+							"it" : "Slovaca"
+						},
+						"value" : "sl"		
+					}
+
+				]
+			}
+		]
+		
+	},
+	
+	"js" : {
+		"scripts" : [
+		   "/scripts/EuAccessibility.js",
+		   "/scripts/EuGlobalMenu.js",
+		   "/scripts/EuMenuBar.js"
+		]
+	},
+	
+	"css" : {
+		
+		"stylesheets" : [
+			"/styles/application2.css",
+			"/styles/EuGlobalMenu2.css",
+			"/styles/GlobalNavMenuBar.css"
+		]
+		
+	}	
+});

@@ -1,0 +1,162 @@
+.eu-global-menu {
+  display: inline-block;
+
+  padding-left: 0.15em;
+  text-align: left;
+  z-index: 11;
+}
+
+
+.eu-global-menu.vMenu {
+	/* static hMenu overlaps */
+	position: relative;
+	z-index: 12;
+}
+
+	
+.eu-global-menu.no-highlight span.open-menu {
+  text-shadow: none; 
+}
+
+
+.eu-global-menu.selected .item.active {
+  box-shadow: inset 0 0 4px #4C7ECF;
+}
+
+.eu-global-menu:focus {
+  outline: none;
+}
+
+.eu-global-menu:focus .menu-label {
+  text-decoration: underline;
+}
+
+.eu-global-menu .icon-mobilemenu,
+.eu-global-menu .open-menu,
+.eu-global-menu .menu-label {
+  color:white;
+}
+
+
+.eu-global-menu .item {
+  display: none !important;
+  padding: 0.2em 0.6em 0.1em 0.6em;
+  white-space: nowrap;
+  z-index: 200; 
+}
+
+
+.eu-global-menu.active>ul>.item {
+  /* shown items */
+  display: block !important;
+  width:	100%;
+}
+
+
+.hMenu{
+	width: 100%;
+}
+
+.eu-global-menu.hMenu.active>ul>.item {
+	
+  /* shown horizontal items */
+  display: inline-block !important;
+  width:   auto;
+  
+}
+
+.eu-global-menu.hMenu.active>ul>.item.active {
+	
+  /* active is orange 
+  box-shadow:		none;
+  background-color:	orange;
+  */
+  box-shadow: inset 0 0 4px #4C7ECF;
+
+}
+
+.eu-global-menu.hMenu.active>ul>.item.active.globalmenu{
+  box-shadow: none;
+}
+
+.eu-global-menu.hMenu.active>ul>.globalmenu.item.active{
+	
+  background-color:	#222;
+}
+
+
+
+.eu-global-menu a {
+    text-decoration: none;
+    cursor: pointer;
+    
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.eu-global-menu .menu-label,
+.eu-global-menu .open-menu {
+    cursor: pointer;
+}
+
+.eu-global-menu span {
+  line-height: inherit;
+}
+
+/*
+.eu-global-menu span:not(.icon-mobilemenu){
+	display: table-cell !important;
+	vertical-align: middle;	
+}
+*/
+.eu-global-menu span{
+	vertical-align: middle;	
+}
+
+.eu-global-menu .open-menu{
+	display: table-cell !important;
+}
+
+.eu-global-menu a:hover,
+.eu-global-menu .item:focus a,
+.eu-global-menu .item a:focus {
+  text-decoration: underline;
+}
+
+.eu-global-menu > ul {
+  list-style-type: none;
+  position:        absolute;
+  margin:          0px;
+  padding:         0px;
+  z-index:         200;
+  max-height:      21em;
+  overflow-x:      hidden;
+  overflow-y:      auto;
+}
+
+.eu-global-menu.hMenu > ul {
+
+  position:     absolute;
+  width:        100%;
+  overflow:     visible;
+  z-index:		0;
+}
+
+
+.eu-global-menu .submenu .item{
+	border-bottom: 0.2em solid #222;
+}
+	
+.eu-global-menu.hMenu > ul {
+	left:        0;
+}
+
+
+.right .eu-global-menu ul{
+	right:			0;
+}
+.right .eu-global-menu ul li{
+	padding-right:	1.5em;
+}
+
